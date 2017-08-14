@@ -1053,3 +1053,4 @@ MonoBehaviour:
   ball: {fileID: 1650036558}
   playerCamera: {fileID: 1672950482}
   ballDistance: 2.25
+  ballthrowingDistance: 600
