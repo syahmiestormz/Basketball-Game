@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -66,7 +66,8 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000001, guid: 031a7bb3fdb4b244797c511c31a3ac4a,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -340,6 +341,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 847752216}
+  - 114: {fileID: 847752217}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -363,6 +365,19 @@ Transform:
   - {fileID: 10742361}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &847752217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847752215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e0f6851295a1e48aa5e17465750aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1870448508}
+  resetTimer: 5
 --- !u!1 &885389978
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +786,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1487743096}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -900,7 +915,7 @@ Transform:
   m_GameObject: {fileID: 1650036558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 10742361}
@@ -937,7 +952,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1650036558}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e7d2dca31faf6e94d8b80cadaf074f7b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1052,5 +1067,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1650036558}
   playerCamera: {fileID: 1672950482}
-  ballDistance: 2.25
+  ballDistance: 1.5
   ballthrowingDistance: 600
+  holdingBall: 1

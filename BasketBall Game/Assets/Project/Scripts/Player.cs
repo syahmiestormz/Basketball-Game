@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 	public float ballDistance=2f;
 	public float ballthrowingDistance = 5f;
 
-	private bool holdingBall=true;
+	public bool holdingBall=true;
 
 	// Use this for initialization
 	void Start () 
