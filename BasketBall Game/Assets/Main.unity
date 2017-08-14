@@ -139,7 +139,7 @@ GameObject:
   - 65: {fileID: 1487743098}
   - 23: {fileID: 1487743097}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: e22291ee128d82a4384305a7896de25a, type: 2}
+  - {fileID: 2100000, guid: 06cfec7a1b3c41f49852b2626a802772, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
